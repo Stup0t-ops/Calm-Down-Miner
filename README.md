@@ -35,3 +35,16 @@ python calm_down_miner.py
 - `prices.json` - local price cache
 - `settings.json` - app settings
 - `profile_index_cache.json` - profile cache
+
+## Releases
+
+Use GitHub Releases to publish downloadable versions.
+
+1. Open your repo on GitHub.
+2. Go to **Releases** -> **Draft a new release**.
+3. Create a tag (example: `v1.0.0`).
+4. Add a title and notes for what changed.
+5. Publish release.
+
+GitHub will automatically attach source `.zip` and `.tar.gz` downloads.
+
