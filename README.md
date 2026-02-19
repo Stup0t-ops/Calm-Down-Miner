@@ -48,3 +48,15 @@ Use GitHub Releases to publish downloadable versions.
 
 GitHub will automatically attach source `.zip` and `.tar.gz` downloads.
 
+### Build Windows `.exe` automatically
+
+This repo includes a GitHub Actions workflow that builds a Windows app package.
+
+1. Open **Actions** in your GitHub repo.
+2. Run workflow **Build Windows EXE** (manual trigger).
+3. After it finishes, open the run and download artifact **CalmDownMiner-Windows**.
+
+The artifact is a zip containing `CalmDownMiner.exe` plus required runtime files.
+
+If you publish a GitHub Release, the workflow also attaches `CalmDownMiner-Windows.zip` to that release.
+
