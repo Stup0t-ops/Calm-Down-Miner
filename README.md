@@ -1,5 +1,7 @@
 # Calm Down Miner
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Desktop mining tracker for EVE Online logs.
 
 ## What it does
