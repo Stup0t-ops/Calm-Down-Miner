@@ -127,8 +127,9 @@ ESI_TYPEIDS = {
     "Fullerite-C540": 30376,
 }
 
-PRICE_FILE = Path(__file__).resolve().with_name("prices.json")
-PROFILE_CACHE_FILE = Path(__file__).resolve().with_name("profile_index_cache.json")
+APP_DIR = Path(sys.executable).resolve().parent if getattr(sys, "frozen", False) else Path(__file__).resolve().parent
+PRICE_FILE = APP_DIR / "prices.json"
+PROFILE_CACHE_FILE = APP_DIR / "profile_index_cache.json"
 
 def load_profile_cache() -> dict:
     try:
@@ -1991,7 +1992,7 @@ class App:
             self.style.configure('TCombobox', font=(None, 9))
         except Exception:
             pass
-        self.settings_file = Path("settings.json")
+        self.settings_file = APP_DIR / "settings.json"
         # persist window geometry and state and dark theme Flag
         self.window_geometry = None
         self.window_state = None
